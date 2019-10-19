@@ -14,6 +14,6 @@ def randomness(length):
 		else: # Or add a special character
 			final_string += choice(["*", "~", "%", "#", "$"])
 
-	return final_string
+	return final_string # Return result
 
 print(randomness(16))
