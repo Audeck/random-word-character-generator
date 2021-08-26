@@ -5,19 +5,11 @@ def randomness(length):
 	final_string = ""
 	n = length
 
-	for number in range(0,n): # Iterate n (== length) amount of times
-		number = number # Pointless line test
-		randomNum = randint(0, 67) # Can be 67 different characters -> 0 to 66 to weigh the selection
+	for number in range(0,n):
+		number = number # A completely pointless line
+		possible_character_string = string.ascii_letters + "0123456789*~%#$"
+		final_string += choice(possible_character_string)
 
-		if randomNum in range(0, 52): # Add a letter
-			final_string += choice(string.ascii_letters)
-
-		elif randomNum in range(52, 62): # Or add a digit
-			final_string += str(randint(0, 9))
-			
-		else: # Or add a special character
-			final_string += choice(["*", "~", "%", "#", "$"])
-
-	return final_string # Return result
+	return final_string
 
 print(randomness(16))
