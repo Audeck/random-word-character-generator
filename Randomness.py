@@ -3,9 +3,8 @@ from random import randint, choice
 
 def randomness(length):
 	final_string = ""
-	n = length
 
-	for number in range(0,n):
+	for number in range(0, length):
 		number = number # A completely pointless line
 		possible_character_string = string.ascii_letters + "0123456789*~%#$"
 		final_string += choice(possible_character_string)
