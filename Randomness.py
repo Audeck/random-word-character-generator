@@ -11,4 +11,5 @@ def randomness(length):
 
 	return final_string
 
-print(randomness(16))
+if __name__ == "__main__":
+	print(randomness(16))
