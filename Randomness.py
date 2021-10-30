@@ -6,7 +6,7 @@ def randomness(length):
 	possible_characters_string = ascii_letters + "0123456789*~%#$"
 
 	for number in range(0, length):
-		number = number # A completely pointless line
+		number = number  # A completely pointless line
 		final_string += choice(possible_characters_string)
 
 	return final_string
